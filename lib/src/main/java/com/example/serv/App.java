@@ -10,7 +10,7 @@ public class App {
 
         System.out.println("Sending POST to GCM");
 
-        String apiKey = "AIzaSyC_oi5v-QwyHirz_xbDzwcdcAROWrZ-xwc";
+        String apiKey = "AIzaSyCqT8jZ_FJRnEfwOOBkVWLDZ_IEOhXOFUA";
         Content content = createContent();
 
         Post2Gcm.post(apiKey, content);
@@ -19,8 +19,9 @@ public class App {
     public static Content createContent() {
         Content c = new Content();
 
-        c.addRegId("APA91bGB-ZbeyCtLP_QRNQE5zu4Y-1LgRlTFiIMh2vDrhtgVwL5vTo5DYiE_YFo4ftOjxk4Nihykt_LSTPL9T_7FX64I7EQoe-l_eQ_4-T36BwAdOgAioktNUE1fwFoaPe6fdzQ1Aayx");
-
+//        c.addRegId("APA91bGPE-2yJSM_7RKCTDsJKnBm1qIE8_esGlXq_E3A16T3-XK0Shw9XBqjgZN8OL75KOmvPaokIPFy-6XpxbEeDnwfGuPPQ8oIab7BJEe3uRuhbziZlue6XRrAGN-fwbfZcaiXmwZv");//my phone
+        c.addRegId("APA91bEaaA6d32krFFL0Il9JgoPa-oKdihYXwPIXJrHwoRQW2lJvNSknzCdHKRdlA115mIVHU-vm85biD5W0Omf8syjNAxkciDNRub_XdGscltTP6mJWj7h22ViKsoPuogyr8bXxvixR");//5.0 elmu
+        c.addRegId("APA91bEq8awffaGpO36ikSqGtSagtotajn85wUdPpQSQD3LXqd0RIN7j4ITRmrFcKaVgp6lJUUnDU9g5FaHaq34VqcqQwr4bnjoMULkTT7hdKxBrfxVS-WbleXU3dGhX6wo27BkZLXCM");//5.1
         c.createData("Working!!", "Test message");
 
         return c;
